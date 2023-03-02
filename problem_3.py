@@ -36,19 +36,16 @@ Tipo: C
 Quantidade: 5
 Tipo: R
 Quantidade: 14
-
 Processes:
 Maria acabou de iniciar seu curso de Engenharia de Alimentos e precisa
 de sua ajuda para organizar os experimentos de um laboratório o qual
 ela é responsável. Ela quer saber no final do ano, quantas amostras
 foram utilizadas no laboratório e o percentual de cada tipo de amostra
 utilizada.
-
 Este laboratório em especial utiliza três tipos de amostras: salmão,
 rabanete e cenoura. Para obter estas informações, ela sabe exatamente
 o número de experimentos que foram realizados, o tipo de amostra
 utilizada e a quantidade de amostras utilizadas em cada experimento.
-
 Output(s):
 Apresente o total de amostras utilizadas, o total de cada tipo de
 amostra utilizada e o percentual de cada uma em relação ao total
@@ -66,7 +63,35 @@ Percentual de salmão: 25.00%
 
 
 def main():
-    pass  # your code here
+  
+    n = int(input("Quantas amostras: "))
+    total = 0
+    cenoura = 0
+    rabanete = 0
+    salmão = 0
+    for i in range(n):
+        tipo = input("Tipo :")
+        quantidade = int(input("Quantidade: "))
+        total +== quantidades
+        if  tipo == "S":
+            salmão +== quantidade
+        elif tipo == "R:"
+            rabanete +== quantidade
+        elif tipo == "C:"
+            cenoura +== quantidade
+        print("Total: {} amostras.".format(total))
+        print("Total de cenouras: {}.".format(cenoura))
+        print("Total de rabanetes: {}.".format(rabanete))
+        print("Total de salmões: {}.".format(salmão))
+
+        porcento_cenoura = (cenoura / total) * 100
+        porcento_rabanete = (rabanete / total) * 100
+        porcento_salmão = (salmão / total) * 100
+    
+        print("Percentual de cenouras: {:.2f}%".format(porcento_cenoura))
+        print("Percentual de rabanetes: {:.2f}%".format(porcento_rabanete))
+        print("Percentual de salmões: {:.2f}%".format(porcento_salmão))
+
 
 
 if __name__ == '__main__':
